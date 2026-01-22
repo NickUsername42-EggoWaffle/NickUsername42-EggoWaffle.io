@@ -1,0 +1,179 @@
+:root{
+--bgMain: #1d0502;
+--bgHeader:#Ae0000;
+--font:#ff5050;
+--highlight: #fedbdb;
+}
+
+body{
+    background-color: #1d0502;
+    color: var(--font);
+    font-family: 'Times New Roman', Times, serif
+}
+header img{
+    height: 10%;
+    display: inline
+}
+header{
+    background-color: var(--bgHeader)0;
+    background: bottom right no-repeat url(../images/LogoMed.png), var(--bgHeader);
+    padding: 0px;
+    margin: 0px
+}
+header h1{
+    font-size: 2.5em;
+    margin-inline-start: 15px
+}
+nav ul li{
+    display: inline;
+
+}
+nav ul li a{
+    text-decoration: none;
+    margin: 5%;
+    padding: 10px;
+    color: var(--font);
+    &:hover{
+       color: var(--bgHeader); 
+       background-color: var(--font);
+       
+    }
+
+}
+
+table,tr,td,th{
+    border: solid var(--bgHeader);
+    border-colapse: collapse;
+}
+
+section a{
+    color: var(--bgHeader); 
+}
+
+header p{
+    margin-inline-start: 15px;
+    font-size: 1.5em
+}
+#Top{
+    background: center top no-repeat url(../images/Location.png), var(--highlight);
+    background-size: 100% 100%;
+    border-inline: var(--bgHeader)0 solid 10px;  
+    padding: 10%;
+    margin: 2%
+}
+#Top h2{
+ font-size: 3em;
+ background: var(--bgHeader);
+ text-align: center;
+}
+#Top p{
+ font-size: 1.5em;
+ background: var(--bgHeader);
+ text-align: center;
+}
+.left h2{
+ font-size: 3em;
+}
+.left p{
+ font-size: 1.5em;
+ display: inline;
+}
+.right h2{
+ font-size: 3em;
+}
+.right p{
+ font-size: 1.5em;
+ display: inline;
+}
+.Menu{
+    display: grid;
+    list-style-type: none;
+
+    li{
+        background-color: var(--bgHeader);
+        padding: 5%;
+        margin: 5%;
+        gap: 10px;
+        text-align: center;
+        font-size: 3em
+    }
+    img{
+        display: block;
+        width: 55%;
+        margin-inline: auto;
+    }
+}
+
+
+
+@media all and (max-width: 767px){
+    .Menu{
+    grid-template-columns: 1fr 1fr;
+      }
+}
+
+
+@media all and (min-width: 768px){
+    .Menu{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+#P1{
+    background: right center no-repeat url(../images/Flag_of_the_United_States.svg.png);
+    background-size: 25em;
+}
+#P2{
+    background: left center no-repeat url(../images/cows.jpg);
+    background-size: 25em;
+}
+#P3{
+    background: right center no-repeat url(../images/JaredClark.png);
+    background-size: 12em;
+}
+#P4{
+    background: right center no-repeat url(../images/JaredClark.png);
+    background-size: 25em;
+}
+#P5{
+    background: Left center no-repeat url(../images/JaredClark.png);
+    background-size: 25em;
+}
+#P6{
+    background: right center no-repeat url(../images/JaredClark.png);
+    background-size: 25em;
+}
+#P7{
+    background: left center no-repeat url(../images/JaredClark.png);
+    background-size: 25em;
+}
+#P8{
+    background: right center no-repeat url(../images/Location.png);
+    background-size: 25em;
+}
+#P9{
+    background: right center no-repeat url(../images/Employee\ 1.png);
+    background-size: 20em;
+}
+#P10{
+    background: right center no-repeat url(../images/Employee\ 2.png);
+    background-size: 20em;
+}
+#P11{
+    background: right center no-repeat url(../images/Employee\ 3.png);
+    background-size: 20em;
+}
+
+  .right{
+    display: block;
+    border: solid var(--bgHeader);
+    padding-inline-start: 35%;
+    text-align: right;
+}
+.left{
+    display: block;
+    border: solid var(--bgHeader);
+    padding-inline-end: 35%;
+
+}
+}
+
+
